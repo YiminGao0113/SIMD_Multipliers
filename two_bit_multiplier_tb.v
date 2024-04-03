@@ -13,7 +13,7 @@ two_bit_multiplier UUT(.result(result), .a(a), .b(b));
 // end
 
 initial begin
-$dumpfile("two_bit_multiplier.vcd");
+$dumpfile("build/two_bit_multiplier.vcd");
 $dumpvars(0,two_bit_multiplier_tb);
 
 // we have to start somewhere

@@ -17,7 +17,7 @@ dp32 UUT(a, b, mul_int32, sum_int16, sum_int8, sum_int4, sum_int2);
 // end
 
 initial begin
-$dumpfile("dp32.vcd");
+$dumpfile("build/dp32.vcd");
 $dumpvars(0,dp32_tb);
 
 // we have to start somewhere

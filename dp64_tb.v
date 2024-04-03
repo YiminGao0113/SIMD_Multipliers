@@ -1,4 +1,4 @@
-module dp_tb;
+module dp64_tb;
 
 // reg nrst,CLK;
 reg [63:0] a, b; 
@@ -8,7 +8,7 @@ wire [11:0] sum_int4;
 wire [10:0] sum_int2;
 
 // int16_multiplier UUT(.result_int16(result), .result_int2_0(result_int2_0), .result_int2_1(result_int2_1), .result_int2_2(result_int2_2), .result_int2_3(result_int2_3), .result_int2_4(result_int2_4), .result_int2_5(result_int2_5), .result_int2_6(result_int2_6), .result_int2_7(result_int2_7), .result_int4_0(result_int4_0), .result_int4_1(result_int4_1), .result_int4_2(result_int4_2), .result_int4_3(result_int4_3), .a(a), .b(b));
-dp UUT(a, b, sum_int16, sum_int8, sum_int4, sum_int2);
+dp64 UUT(a, b, sum_int16, sum_int8, sum_int4, sum_int2);
 // always begin
 //     #10 
 //     CLK = ~CLK;
@@ -16,8 +16,8 @@ dp UUT(a, b, sum_int16, sum_int8, sum_int4, sum_int2);
 // end
 
 initial begin
-$dumpfile("dp.vcd");
-$dumpvars(0,dp_tb);
+$dumpfile("build/dp64.vcd");
+$dumpvars(0,dp64_tb);
 
 // we have to start somewhere
 // CLK = 0;

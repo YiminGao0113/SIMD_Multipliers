@@ -1,5 +1,5 @@
 
-module dp(
+module dp64(
     input [63:0] a, b,
     output [34:0]  sum_int16,
     output [18:0]  sum_int8,

@@ -15,7 +15,7 @@ eight_bit_multiplier UUT(.result(result), .result_int2_0(result_int2_0), .result
 // end
 
 initial begin
-$dumpfile("eight_bit_multiplier.vcd");
+$dumpfile("build/eight_bit_multiplier.vcd");
 $dumpvars(0,eight_bit_multiplier_tb);
 
 // we have to start somewhere

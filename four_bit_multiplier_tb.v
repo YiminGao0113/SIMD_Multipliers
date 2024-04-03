@@ -13,7 +13,7 @@ four_bit_multiplier UUT(.result(result), .a(a), .b(b));
 // end
 
 initial begin
-$dumpfile("four_bit_multiplier.vcd");
+$dumpfile("build/four_bit_multiplier.vcd");
 $dumpvars(0,four_bit_multiplier_tb);
 
 // we have to start somewhere
