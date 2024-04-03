@@ -1,6 +1,7 @@
 
 # SIMD Versatile Dot Product Unit
 The SIMD Versatile Dot Product Unit is a high-performance computing solution designed for generating dot product outputs in various precisions, leveraging SIMD (Single Instruction, Multiple Data) architecture to enhance computational efficiency and performance.
+
 dp32.v is a 32-bit dot product unit that is able to compute the result of a 32-bit multiplication, 16-bit 1x2x1 dot product, 8-bit 1x4x1 dot product, 4-bit 1x8x1 dot product and a 2-bit 1x16x1 dot product. 
 Likewise dp64.v is the 64-bit version of it. The design features a hierarchical multiplier structure and uses basically the same amount of logic to compute in different precisions. 
 
